@@ -46,6 +46,7 @@ public class RestClient {
 		
 		public CloseableHttpResponse post(String url , String entityString , HashMap<String , String> headerMap) throws ClientProtocolException, IOException {
 			
+			System.out.println("inside post method");
 			CloseableHttpClient httpClient = HttpClients.createDefault();
 			HttpPost httpPost  = new HttpPost(url); // http post request
 			httpPost.setEntity(new StringEntity(entityString)); // for payload
