@@ -58,12 +58,12 @@ public class GetAPITest extends TestBase {
 	    }
 	   	System.out.println("Headers array : " +allHeader);
 
-//	   	//single value - JSON Object
-//		String pages = TestUtil.getValueByJPath(responseJson, "/pagination");
-//		System.out.println("Value of per page attribute is : " +pages);
-//		
-//		//JSON Array 	
-	   	
+	   	//single value - JSON Object
+		String pages = TestUtil.getValueByJPath(responseJson, "/pagination");
+		System.out.println("Value of per page attribute is : " +pages);
+		
+		//JSON Array 	
+	   	System.out.println("implemented for json array");
 	}
 
 	
