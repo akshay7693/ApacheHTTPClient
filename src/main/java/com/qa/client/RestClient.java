@@ -21,6 +21,8 @@ public class RestClient {
 	
 	//1. GET Method without Headers
 	public CloseableHttpResponse get(String url) throws ClientProtocolException, IOException {
+		
+		System.out.println("inside get method");
 	    CloseableHttpClient httpClient = HttpClients.createDefault();
 	   	HttpGet httpGet = new HttpGet(url); // http get request
 	   	
